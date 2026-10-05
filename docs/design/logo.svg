@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253 64" fill="none" role="img" aria-label="SHIVA POKER">
+  <!--
+    Lockup traced from docs/design/logo.png (253×64).
+    Mark: outlined spade (two overlapping triangles + stem).
+    Brand color sampled from the PNG: rgb(0, 232, 177) H #00E8B1
+  -->
+  <g transform="translate(10 6)" stroke="#00E8B1" stroke-width="2.35" stroke-linejoin="miter" stroke-linecap="round">
+    <path d="M22 1.2 L1.6 38.2 L42.4 38.2 Z"/>
+    <path d="M22 18.5 L12.2 35.2 L31.8 35.2 Z"/>
+    <path d="M8.2 46.5 L22 37.4 L35.8 46.5"/>
+    <path d="M6.5 47.2 H37.5"/>
+  </g>
+  <text
+    x="77"
+    y="42"
+    fill="#F7FBF7"
+    font-family="Inter, Montserrat, 'Segoe UI', sans-serif"
+    font-size="22"
+    font-weight="600"
+    letter-spacing="2.4"
+  >SHIVA POKER</text>
+</svg>
