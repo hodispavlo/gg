@@ -1,22 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253 64" fill="none" role="img" aria-label="SHIVA POKER">
-  <!--
-    Lockup traced from docs/design/logo.png (253×64).
-    Mark: outlined spade (two overlapping triangles + stem).
-    Brand color sampled from the PNG: rgb(0, 232, 177) H #00E8B1
-  -->
-  <g transform="translate(10 6)" stroke="#00E8B1" stroke-width="2.35" stroke-linejoin="miter" stroke-linecap="round">
-    <path d="M22 1.2 L1.6 38.2 L42.4 38.2 Z"/>
-    <path d="M22 18.5 L12.2 35.2 L31.8 35.2 Z"/>
-    <path d="M8.2 46.5 L22 37.4 L35.8 46.5"/>
-    <path d="M6.5 47.2 H37.5"/>
-  </g>
-  <text
-    x="77"
-    y="42"
-    fill="#F7FBF7"
-    font-family="Inter, Montserrat, 'Segoe UI', sans-serif"
-    font-size="22"
-    font-weight="600"
-    letter-spacing="2.4"
-  >SHIVA POKER</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="253.16" height="64" viewBox="0 0 253.16 64" role="img" aria-labelledby="title desc">
+<title id="title">SHIVA POKER</title>
+<desc id="desc">Vector reconstruction of the approved mockup logo. Turquoise geometric spade with white outlined lettering; transparent background.</desc>
+<g fill="none" stroke="#00E8B1" stroke-width="1.9" stroke-linejoin="miter" stroke-linecap="square">
+<path d="M32 7 11 34 19.5 42.5 32 26 44.5 42.5 53 34Z"/>
+<path d="M32 26 23.8 36.5 32 47 40.2 36.5Z"/>
+<path d="M32 39 23.5 53H40.5Z"/>
+</g>
+<g fill="#F7F8F7" transform="translate(76 39) scale(0.022 -0.022)"><path transform="translate(0.0000 0)" d="M596 515C596 565 593 579 577 613C537 697 452 741 329 741C169 741 70 659 70 527C70 438 117 382 213 357L394 309C487 285 528 248 528 191C528 152 507 112 476 90C447 69 401 59 342 59C262 59 209 78 174 120C147 152 135 187 136 232H48C49 165 62 121 91 81C141 12 225 -23 336 -23C423 -23 494 -3 541 33C590 72 621 137 621 200C621 290 565 356 466 383L283 432C195 456 163 484 163 540C163 614 228 663 326 663C442 663 507 611 508 515Z"/><path transform="translate(757.9091 0)" d="M551 332V0H644V729H551V414H176V729H83V0H176V332Z"/><path transform="translate(1570.8182 0)" d="M194 729H100V0H194Z"/><path transform="translate(1939.7273 0)" d="M392 0 645 729H546L344 112L130 729H30L292 0Z"/><path transform="translate(2697.6364 0)" d="M474 219 549 0H653L397 729H277L17 0H116L193 219ZM448 297H216L336 629Z"/><path transform="translate(3824.4545 0)" d="M184 309H413C470 309 515 326 554 361C598 401 617 448 617 515C617 652 536 729 392 729H91V0H184ZM184 391V647H378C467 647 520 599 520 519C520 439 467 391 378 391Z"/><path transform="translate(4582.3636 0)" d="M389 741C180 741 38 587 38 359C38 130 179 -23 390 -23C479 -23 557 4 616 54C695 121 742 234 742 353C742 588 603 741 389 741ZM389 659C547 659 649 540 649 355C649 179 544 59 390 59C234 59 131 179 131 359C131 539 234 659 389 659Z"/><path transform="translate(5451.2727 0)" d="M172 255 291 374 548 0H658L358 432L655 729H535L172 360V729H79V0H172Z"/><path transform="translate(6209.1818 0)" d="M183 332H580V414H183V647H595V729H90V0H613V82H183Z"/><path transform="translate(6967.0909 0)" d="M186 314H426C509 314 546 274 546 184L545 119C545 74 553 30 566 0H679V23C644 47 637 73 635 170C634 290 615 326 536 360C618 401 651 450 651 534C651 660 573 729 429 729H93V0H186ZM186 396V647H411C463 647 493 639 516 619C541 598 554 565 554 522C554 435 510 396 411 396Z"/></g>
 </svg>

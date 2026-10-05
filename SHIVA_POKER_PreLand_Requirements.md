@@ -1,7 +1,7 @@
 # SHIVA POKER — Pre-Landing Requirements
 
-Version: 1.2  
-Source: design mockup `docs/design/preland-mockup.jpg`  
+Version: 1.3  
+Source: approved mockup `docs/design/preland-mockup.jpg` and clickable prototype `~/Downloads/SHIVA_POKER_Prototype` (copied into `public/`)  
 Scope: single-screen pre-landing (preland) that sends the user to the club Telegram **bot**.
 
 This document is the implementation spec. Pixel-faithful match to the mockup is required for layout, copy, hierarchy, and visual mood.
@@ -40,7 +40,7 @@ The mockup defines two canonical frames. Both must ship.
 - Inactive locale: muted white/gray
 - Separator `/` is muted and not clickable
 - Switching language updates all UI copy immediately (no reload required)
-- Persist choice in `localStorage` key `shiva.locale`
+- Persist choice in `localStorage` key `shiva.locale` (`ru` | `uk`). Read legacy `shiva-language` if present.
 - Default when no stored choice:
   - `uk` / `uk-UA` browser languages → `ua`
   - everything else → `ru`
@@ -255,7 +255,8 @@ Required in the repo:
 | --- | --- | --- |
 | Hero (AI mockup crop) | `docs/design/preland-mockup.jpg` | Full-bleed background. Derive 2x WebP + JPEG from this crop; do not replace with stock |
 | Logo lockup (raster source) | `docs/design/logo.png` | Pixel-true header reference (253×64, mint mark + white wordmark) |
-| Logo lockup (SVG) | `docs/design/logo.svg` | Canonical header mark. Traced lockup, mint `#00E8B1`. No brand-kit SVG exists — do not replace |
+| Logo lockup (SVG) | `docs/design/logo.svg` (also `public/assets/logo.svg`) | Outlined vector reconstruction from the prototype. Mint `#00E8B1`. No brand-kit original — do not replace |
+| Hero mockup crop | `public/assets/mockup.png` | Prototype photo crop shown through the SVG viewport in `public/index.html` |
 | Favicon | derived from the mark | Mint spade on dark green |
 
 ---
@@ -309,11 +310,11 @@ Resolved:
 
 - Telegram destination: bot `https://t.me/shivapoker_bot` (channel URL was a typo)
 - CTA copy: keep mockup (“Откроется Telegram-бот” / “Відкриється Telegram-бот”)
-- Hero: keep AI mockup crop
-- Logo: keep traced `docs/design/logo.svg`, mint `#00E8B1` (no original brand-kit SVG)
+- Hero: AI mockup crop from the prototype (`public/assets/mockup.png`)
+- Logo: outlined trace `docs/design/logo.svg` / `public/assets/logo.svg`, mint `#00E8B1`
+- Structure/CSS: `public/` is the prototype implementation with the bot URL
 
 Still open:
 
-1. Favicon / OG image
-2. Production domain and whether `ru`/`ua` should also live on subpaths
-3. Analytics ID (optional)
+1. Production domain and whether `ru`/`ua` should also live on subpaths
+2. Analytics ID (optional)
