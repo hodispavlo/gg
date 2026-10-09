@@ -3,21 +3,25 @@ const copy = {
     eyebrow: "ЗАКРЫТЫЙ ПОКЕРНЫЙ КЛУБ",
     heading: "Играете в покер?",
     invite: "Присоединяйтесь к нам.",
-    description: "Выбирайте формат игры и комфортный лимит",
+    perk1: "Оплата так, как удобно — криптовалюта или карта",
+    perk2: "Мгновенное пополнение и вывод средств",
+    perk3: "Турниры, джекпоты и розыгрыши для участников",
     cta: "Присоединиться к клубу",
     caption: "Откроется Telegram-бот",
     title: "SHIVA POKER — закрытый покерный клуб",
-    descriptionMeta: "Выбирайте формат игры и комфортный лимит. SHIVA POKER.",
+    descriptionMeta: "Оплата криптовалютой или картой, мгновенные выплаты, турниры и джекпоты. SHIVA POKER.",
   },
   uk: {
     eyebrow: "ЗАКРИТИЙ ПОКЕРНИЙ КЛУБ",
     heading: "Граєте в покер?",
     invite: "Приєднуйтеся до нас.",
-    description: "Обирайте формат гри та комфортний ліміт",
+    perk1: "Оплата так, як зручно — криптовалюта або картка",
+    perk2: "Миттєве поповнення та виведення коштів",
+    perk3: "Турніри, джекпоти та розіграші для учасників",
     cta: "Приєднатися до клубу",
     caption: "Відкриється Telegram-бот",
     title: "SHIVA POKER — закритий покерний клуб",
-    descriptionMeta: "Обирайте формат гри та комфортний ліміт. SHIVA POKER.",
+    descriptionMeta: "Оплата криптовалютою або карткою, миттєві виплати, турніри та джекпоти. SHIVA POKER.",
   },
 };
 
@@ -46,6 +50,8 @@ function applyLanguage(language) {
   document.title = strings.title;
   const descriptionTag = document.querySelector('meta[name="description"]');
   if (descriptionTag) descriptionTag.setAttribute("content", strings.descriptionMeta);
+  const ogDescription = document.querySelector('meta[property="og:description"]');
+  if (ogDescription) ogDescription.setAttribute("content", strings.descriptionMeta);
   document.querySelectorAll("[data-copy]").forEach((element) => {
     element.textContent = strings[element.dataset.copy];
   });
