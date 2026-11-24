@@ -60,7 +60,37 @@ function applyLanguage(language) {
   });
 }
 
+const BOT_TRACK_URL = "https://shiva-poker.com/meta/bot/83E609711D68";
+const TRACK_PARAMS = [
+  "fbclid",
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+  "utm_id",
+  "gclid",
+  "ttclid",
+];
+
+function applyBotTrackingLink() {
+  const cta = document.querySelector("a.cta");
+  if (!cta) return;
+  try {
+    const dest = new URL(BOT_TRACK_URL);
+    const src = new URLSearchParams(window.location.search);
+    TRACK_PARAMS.forEach((key) => {
+      const value = src.get(key);
+      if (value) dest.searchParams.set(key, value);
+    });
+    cta.setAttribute("href", dest.toString());
+  } catch {
+    cta.setAttribute("href", BOT_TRACK_URL);
+  }
+}
+
 applyLanguage(readStoredLanguage());
+applyBotTrackingLink();
 
 document.querySelectorAll("[data-lang]").forEach((button) => {
   button.addEventListener("click", () => {
